@@ -1,0 +1,22 @@
+CREATE TABLE store (quantity INTEGER, Name Text, price integer, size text, gender Text);
+INSERT INTO store VALUES (4, "Nike Shoes", 59.99, 10.5, "mens");
+INSERT INTO store VALUES (5, "Nike Shoes", 58.99, 7, "womens");
+INSERT INTO store VALUES (8, "REI shirt", 27.95, "XL", "unisex");
+INSERT INTO store VALUES (1, "Flip flops", 18.99, 12, "mens");
+INSERT INTO store VALUES (22, "Board Shorts", 12.99, 34, "mens");
+INSERT INTO store VALUES (12, "PrAna Pants", 89.99, 7, "womens");
+INSERT INTO store VALUES (7, "Altra trail runners", 140.99, 13, "mens");
+INSERT INTO store VALUES (5, "Flip flops", 17.99, 9, "womens");
+INSERT INTO store VALUES (9, "shorts", 10.99, 38, "mens");
+INSERT INTO store VALUES (3, "shirts", 7.99, "XXL", "womens");
+INSERT INTO store VALUES (2, "pants", 58.99, 34, "mens");
+INSERT INTO store VALUES (12, "pants", 58.99, 12, "womens");
+INSERT INTO store VALUES (45, "shoes", 28.99, 10, "kids");
+INSERT INTO store VALUES (25, "underwear", 11.99, "L", "mens");
+INSERT INTO store VALUES (11, "underwear", 11.99, "M", "womens");
+
+Wanted to see what the cheapest item in the store was.
+SELECT * FROM store order by price desc;
+
+Wanted to see items that were twenty dollars or more and how many there were.
+SELECT * FROM store where price > 20 order by quantity;
